@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+        .calculator
+        {
+            width:400px;
+            height: 400px;
+            margin:auto;
+            padding: 2px;
+        }
+        .forms
+        {
+            width: 300px;
+            padding: 38px;
+            margin: 35px; 
+            background-color: darkgray;
+            border-radius:5px;
+        }
+        #bb
+        {
+           width: 213px;
+           height: 40px;
+           margin-top:10px;
+           margin:5px;
+           border-radius: 5px;
+           border-color: blue;
+           font-size: 30px;
+           
+        }
+        .jb
+        {
+            padding-left:16px;
+            padding-right:15px;
+            margin: 5px;
+            position:center;
+            background-color: rgb(48, 54, 53);
+            color: white;
+            border-radius: px;
+            font-size: 16px;
+        }
+        .clear
+        {
+            padding-left:px;
+            margin: 5px;
+            position:center;
+            background-color: rgb(48, 54, 53);
+            color: white;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+    <form class="forms" name="forms">
+        <input id="bb" type="text" name="answers">
+        <br><br>
+    <input class="jb btn btn-success" type="button" value="1" onclick="forms.answers.value +='1'">
+    <input class="jb btn btn-success" type="button" value="2" onclick="forms.answers.value +='2'">
+    <input class="jb btn btn-success" type="button" value="3  " onclick="forms.answers.value +='3'">
+    <input class="jb btn btn-success" type="button" value="+  " onclick="forms.answers.value +='+'">
+    <br><br>
+    <input class="jb btn btn-success" type="button" value="4  " onclick="forms.answers.value +='4'">
+    <input class="jb btn btn-success" type="button" value="5  " onclick="forms.answers.value +='5'">
+    <input class="jb btn btn-success" type="button" value="6  " onclick="forms.answers.value +='6'">
+    <input class="jb btn btn-success" type="button" value="-  " onclick="forms.answers.value +='-'">
+    <br><br>
+    <input class="jb btn btn-success" type="button" value="7  " onclick="forms.answers.value +='7'">
+    <input class="jb btn btn-success" type="button" value="8  " onclick="forms.answers.value +='8'">
+    <input class="jb btn btn-success" type="button" value="9  " onclick="forms.answers.value +='9'">
+    <input class="jb btn btn-success" type="button" value="*  " onclick="forms.answers.value +='*'">
+    <br><br>
+    <input class="clear btn btn-success" type="button" value="0  " onclick="forms.answers.value +='0'">
+    <input class="clear btn btn-success" type="button" value="clear  " onclick="forms.answers.value =''">
+    <input class="clear btn btn-success" type="button" value="=  " onclick="forms.answers.value =eval(forms.answers.value)">
+    <input class="clear btn btn-success" type="button" value="/  " onclick="forms.answers.value +='/'">
+</form>
+</div>
+</body>
+</html>
